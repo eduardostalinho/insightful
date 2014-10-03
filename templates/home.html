@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+  {% block extratitle %} Home {% endblock %}
+    {% block content %}
+      <ul>
+        <li>Here you can organize your ideas using references from social media.</li>
+        <li>Just search for a term and organize your references the easy way.</li>
+        <li>Media over media.</li>
+        <li>Open-source creativity.</li>
+        <li>Cooperative comprehension of the environment.</li>
+        <li>And all this hipster bullshit.</li>
+      </ul>
+      <a class="btnBasic" href="{{ url_for('search') }}" style="margin: auto;">Generate your insights</a>
+    {% endblock %}
+  </body>
+</html>

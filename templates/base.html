@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Insightful - {% block extratitle %} {% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/18-27-1080.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/forms.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/images.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/navmenu.css')}}">
+  </head>
+  <body>
+    {% block header%}
+    <div class="headerFrame col-12 container">
+      <h1> Insightful </h1>
+    </div>
+    {% endblock %}
+
+    <div class="contentFrame content col-12 container">
+    {% block content %}
+    {% endblock %}
+    </div>
+  </body>
+</html>
